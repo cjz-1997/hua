@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>登录</title>
+</head>
+<style>
+body{
+    height: 1000px;
+}
+
+    main{
+        width: 550px;
+        height: 700px;
+       
+        background: white;
+        border-radius: 8px;
+        margin: 0 auto;
+        box-shadow: 0 0 15px gray;
+    }
+    form{
+        width: 400px;
+        height: 700px;
+        margin: 0px auto;
+     padding-top:8px;
+     
+    }
+  
+    .logo{
+        width: 120px;
+        height: 30px;
+        margin: 20px auto;
+        text-align: center;
+        background-image: url(huawei_logo.png);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .zh{
+        display: block;
+    }
+    .zi{
+        font-size:18px;
+        opacity: 0.9;
+    }
+    .kuang{
+        width: 350px;
+        height: 50px;
+        border-radius: 5px;
+    }
+    #wenti {
+        margin-top:20px; 
+    }
+    #wenti a{
+        color: black;
+    }
+    button{
+        margin-top: 10px;
+        width: 400px;
+        height: 60px;
+        background-color: palevioletred;;
+        color: white;
+        border-radius: 8px;
+        box-shadow: 0px 0px 20px gainsboro;
+    }
+    button:hover{
+        background-color: #a54b4a;
+    }
+    .zc{
+        color: black;
+        text-align: center;
+    }
+    footer{
+        width: 200px;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .sf{
+        display: inline-block;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 1px solid black;
+        margin:5px 5px;
+    }
+    .sf1{
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+    .sf2{
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+
+</style>
+
+</head>
+<body>
+    <div class="logo">
+    </div>
+    <main>
+        <form action="">
+                <p style="font-size: 50px;font-weight:bold;">登录</p>
+                   <section id="tou">
+                       
+                      <label for="zhanghao"  class="zh zi" >账号/邮箱*</label>
+                      <input type="text" id="zhanghao" placeholder="请输入账号/邮箱"  class="zh kuang">
+                      <br>
+                      <label for="" class="zh zi">密码*</label>
+                      <input type="password" placeholder="请输入密码" class="zh kuang">
+                    </section>  
+                    <div id="wenti">
+                        <a href="#" class="zi" >忘记密码</a>
+                    </div>
+                    <button>登录</button>
+                     <p class="zc"><a href="" style="color: black;" >立即注册</a></p>
+                     <hr>
+                     <p style="font-size: 20px;text-align: center;">通过其他方式登录</p>
+                    <footer>
+                         <div class="sf sf1" style="background-image: url(weixin.PNG)"></div>
+                         <div class="sf sf2" style="background-image: url(weibo.PNG)" ></div>
+                    </footer>
+                    <a href="" style="color: black;">获取更多帮助？</a>
+                </form>
+                </main> 
+</body>
+</html>

@@ -1,0 +1,751 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>华为官网</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <style>
+          *{
+             box-sizing: border-box;
+          }
+          body{
+              margin: 0;
+              height: 4300px;
+          }
+          #top{
+               height: 25px;
+               background-color: black;
+               font-size: 5px;
+               padding: 3px;
+          }
+          #top a{
+            color: white;
+          }
+         #a1{
+            position: relative;
+            left: 500px;
+            text-decoration: none;
+          }
+          #top1{
+              display: inline-block; 
+              position: relative;
+              left: 1200px;
+         }
+         nav{
+             height: 70px;
+             text-align: center;
+             box-shadow: 0px 0px 10px gray;
+         }
+         nav img{
+             height: 30px;
+             width: 140px;
+             margin-right: 15px;
+             vertical-align: middle; 
+             z-index: 10; 
+         }
+         nav {
+             text-decoration: none;
+             color: black;
+         }
+        .c1{
+             width: 1200px;
+             margin: 0 auto;
+         }
+         #daohang1{
+             padding: 20px;
+             font-size:18px;
+             margin-left: 30px;
+             vertical-align: middle;
+             display: inline-block;
+         }
+         #daohang1 a{
+             margin-right: 80px;
+             color: gray;
+             text-decoration: none;
+         }
+         #daohang1 a:hover{
+            color: #f77c77;
+         }
+         .Search{
+             color:gray;
+             opacity: 0.6;
+         }
+         header{
+             width: 1366px;
+             margin: 1px auto;
+             box-shadow: 0px 0px 5px  gray;
+         }
+         #banner{
+             width: 980px;
+             height: 180px;
+             border: 1px solid  black;
+             display: flex;
+             background-color: white;
+             margin: 0 auto;
+             position: relative;
+             top: -80px;
+             border-radius: 5px;
+             box-shadow: 0px 0px 20px gray;
+         }
+         .box{
+              flex-grow: 1;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+         }
+         .box:hover{
+            cursor: pointer;
+            color: #f77c77;
+         }
+         .c2 h2{
+            padding-bottom: 30px;
+             font-size: 23px;
+             font-weight: bold;
+         }
+         .c2{
+             width: 200px;
+             display: inline-block;
+             margin-left: 25px;
+         }
+         .c2 p{
+              color: #b3b3b3;
+              font-size: 18px;
+              font-weight: bold;
+         }
+         .hr{
+             margin-bottom: 10px;
+            height: 140px;
+            border:0.5px solid gray;
+            opacity: 0.5;   
+         }
+         main{
+             width:1366px;
+             height: 2700px;;
+             /* border: 1px solid red; */
+             margin: 0 auto;
+         }
+        #p30{
+            width: 600px;
+            height: 420px;
+            background-color:   #38BDDE; 
+            border-radius: 7px;
+            box-shadow:0px 0px 5px gray;
+            margin-left: 15px;
+            margin-right: 190px;;
+            display: inline-block;
+            vertical-align: top;
+        }
+        .p301{
+            width: 450px;
+            height: 420px;
+            margin: 0 auto;
+        }
+        .p302{
+             margin: 0px 125px;
+             height: 300px;
+        }
+        .p302 p{
+            margin-bottom: 80px;
+            color:white;
+        }
+        .goumai{
+            font-size:25px;
+        }
+        #p30_left{
+            width: 300px;
+            position: relative;
+            top: -350px;
+            left:450px;
+            display: inline-block;
+        }
+        #p30_right{
+             width: 500px;
+             height: 650px;
+             display: inline-block;
+             vertical-align: top;
+             border-radius:8px;
+             box-shadow: 0px 0px 8px gray;
+        }
+        .jpg{
+            margin-top: 50px;
+            /* width:1360px;
+            height: 500px; */
+            width:100%;
+            height:100%;
+            margin:  auto;
+            /* background-image:url(1.PNG); */
+        }
+        .backgroun-color{
+            background-color:#dde6ed;
+        }
+        .titlebox{
+            width: 1250px;
+            margin: 60px auto;
+           
+            /* border: 1px solid black; */
+        }
+        .title1{
+          
+            /* border: 1px solid black; */
+            font-size: 35px;
+            font-weight: bold; 
+           
+        }
+        .title2{
+            /* border: 1px solid black; */
+            font-size: 20px;
+            font-weight: bold; 
+            float: right;
+        }
+
+      .gswz{
+        width: 350px;
+         height:200px;
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+      }
+      .gswzbox{
+       /* border:1px solid red; */
+       height: 450px;
+       margin:0 60px;
+       border-radius: 8px;
+       position: relative;
+       padding-top: 200px;
+
+      }
+      .gswz1{
+         width: 350px; 
+         height:250px;
+          /* border:1px solid red;  */
+      }
+      .dkjz{
+          margin: 0 30px;
+      }
+      .font{
+          font-size: 25px;
+      }
+      #aside1{
+          width: 600px;
+          height: 500px;
+          display: inline-block;
+          /* border: 1px solid red; */
+          vertical-align:middle;
+          margin-left: 60px;
+      }
+      h4{
+          font-size:20px;
+      }
+      .xwbox p{
+          opacity: 0.8;
+      }
+      .xwbox{
+          margin: 40px 65px;
+      }
+      .aside2{
+        display: flex;
+        width: 1200px;
+        height: 250px;
+  
+        margin: 0 auto;
+        margin-top: 45px;
+        
+      }
+     ul a{
+        color: black;
+        font-size:16px;
+        
+     }
+     ul a:hover{
+         color: black;
+     }
+
+     ul li{
+        list-style: none;
+        margin-bottom: 15px;
+        margin-right: 130px;
+     }
+        .asidetou{
+            font-size: 22px;
+            font-weight: bold;
+           opacity: 0.8; 
+        }
+        .aside3{
+            margin-right: 50px;
+            margin-top: 40px;
+        }
+        address{
+            margin: 0;
+        }
+        address div{
+              font-size:15px;
+              padding-top: 15px;
+              width: 1400px;
+              height: 50px;
+              margin: 0 auto;
+              padding-left: 140px; 
+        }
+        address span{
+            text-align: center;
+            margin-right: 250px;
+        }
+        address div span:nth-child(2){
+                 position: relative;
+                 left: 95px;
+        }
+        .shadow{
+            box-shadow: 0px 0px 5px gray;
+        }
+        .gswzbox:hover,.p301,#p30_right,.yidong{
+            cursor: pointer;
+        }
+       .xwnr{
+         color: black;
+       }
+       .xwnr:hover{
+        color: black;
+       }
+       .box,.top ,.c2,.p302{
+           position: relative;
+       }
+       .box img{
+           padding-left: 10px;
+           position: absolute;
+           left: 0px;
+           bottom: 40px;
+           transition: all 1s;
+       }
+       .box:hover img{
+           bottom: 55px;
+       }
+       .right{
+          position: relative;
+       }
+       .right span{
+           position: absolute;
+           left: 120px;
+           bottom: 10px;
+           transition: all 0.5s;
+       }
+        .right:hover span {
+            color: gray;
+            left:  135px;
+        }
+
+       .left span{
+           position: absolute;
+           left: 120px;
+           bottom: 10px;
+           transition: all 0.5s;
+       }
+        .left:hover span {
+            color: gray;
+            left:  135px;
+        }
+        .top img{
+            position: absolute;
+             bottom: -100px;
+             left: 450px;
+             transition: all 1s;
+        }
+        .top:hover img{
+            bottom: -20px;
+            cursor: pointer;
+        }
+       .box p{
+           position:absolute; 
+            opacity:0 ; 
+           left: 10px;
+           bottom: 20px;
+           transform: translate(0,130px);
+           transition: all 0.7s;
+       }
+       .box:hover p{
+           opacity: 1;
+           transform: translate(0,60px)
+       }
+         .wzleft{
+          position: absolute;
+          left: 0px;
+          bottom: 40px;
+          transition: all 1s;
+       }
+       .p302:hover .wzleft{
+          left: -40px;
+       }
+       .left{
+           position: relative;
+       }
+       .gstuleft{
+           position: absolute;
+           left: 0;
+           bottom: 250px;
+           transition: all 0.3s
+       }
+       .left:hover .gstuleft{
+           left: -20px;
+       }
+      
+       .gswz{
+           position: absolute;
+           left: 0;
+           bottom: 250px;
+           transition: all 0.5s
+       }
+       .gswzbox:hover .gswz{
+           transform: scale(1.05,1.05)
+       }
+       footer{
+           position :relative;
+       }
+       #zuihou{
+           position: absolute;
+           top: 600px;
+           left: 50px;
+       }
+       #sh{
+           width: 150px;
+           height:25px;
+           background-color:rgb(194, 186, 186);
+           box-shadow: 5px  5px 20px gray;
+           border-radius:50%;
+           position: absolute;
+           left: 500px;
+           top: 140px;
+           transition: all 1s;
+       }
+       .top:hover #sh{
+        transform: translate(0,15px);
+       background-color:rgb(238, 232, 232);
+       }
+       #p30_right{ 
+            position: relative;
+       }
+      .p30big,.yidong1{
+          position: absolute;
+          transition: all 1s;
+      }
+      #p30_right:hover .p30big{
+          transform: scale(1.05,1.05);
+      }
+      .yidong1{
+        position: absolute;
+          transition: all 1s;
+          top: 520px;
+      }
+      #p30_right:hover  .yidong1{
+          transform: translate(35px,0);
+      }
+      .maskbox{
+          position: relative;
+          width:1360px;
+          height: 600px;
+          margin: 70px auto;
+          /* 加在父框里  子框里面的图面移动或者放大的时候周边的多余的就会消失 */
+          overflow: hidden;
+      }
+      .mask{
+          /* border: 1px solid black; */
+          width:100%;
+          height:100%;
+          position:absolute;
+          /* top:15px; */
+          top: 0px;
+          left:0px;
+          background-color: rgba(0, 0, 0, 0);
+          transition: all 1s;
+      }
+       .mask:hover {
+        background-color: rgba(0, 0, 0,0.6);
+      }
+      .maskbox img{
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          transition: all 1s;
+         
+      }
+      .maskbox:hover img{
+          transform: scale(1.2, 1.2)
+      }
+    
+
+
+    </style>
+</head>
+<body>
+
+<section id="top">
+           <a href="" id="a1">集团网站<span class="glyphicon glyphicon-menu-down"></span></a>
+     <div id="top1">
+           <a href=""  ><span class="glyphicon glyphicon-globe"></span> 选择区域语言 </a>
+
+           <a href="华为登录界面.html" ><span class="glyphicon glyphicon-lock"></span> 登录 </a>
+     </div> 
+  </section>
+<nav id="daohang">
+    <div class="c1">
+         <a href=""><img src="huawei_logo.png" alt="logo" ></a>  
+    <section id="daohang1">
+           <a href=""  >手机、笔记本&平板…  <span class="glyphicon glyphicon-menu-down  daohangmenu"></span></a>
+           <a href="" >解决方案&服务  <span class="glyphicon glyphicon-menu-down"></span></a>
+           <a href="" >华为商城></a>
+           <a href="" >华为云</a>
+           <span class=" Search glyphicon glyphicon-search"  title="HyperLink Label Search"></span>
+    </section>
+      </div>
+  </nav>
+<header>
+             <div>
+                <img src="hbanner_csr.jpg" alt="csr" >
+             </div>
+  </header>
+<section id="banner"> 
+     <div class="box " id="d1">
+                <img src="bucket-p30pro1.PNG" alt="p30" class="c3">
+                <div class="c2">
+                     <h2 >个人用户</h2>
+                      <p>手机，笔记本和平板等个人及家用产品</p>
+                </div>
+     </div>
+ <hr  class="hr">   
+        <div class="box" id="d2">
+               <img src="banner-nav-img02.png" alt="p30"  class="c3">
+                <div class="c2">
+                        <h2 >企业用户</h2>
+                        <p >企业商用产品、解决方案以及云服务</p>
+                </div>
+           </div>
+<hr class="hr">
+           <div class="box" id="d3">
+                  <img src="banner-nav-img03.png" alt="p30"  class="c3">
+                  <div class="c2">
+                        <h2 >运营商用户</h2>
+                        <p>运营商网络解决方案、产品及服务</p>
+                  </div>
+          </div>
+  </section>
+<main >
+     <section id="p30">
+           <div class="p301  ">
+                <img  style=" margin: 35px 125px;" src="p30_logo_cn_2.png" alt="p30_logo">
+                 <div class="p302">
+                     <p style=" font-size:18px;">未来影像</p>
+                     <p class="goumai yidong  right ">点击购买&emsp; <span class=" arrow-right  glyphicon glyphicon-arrow-right" id="r"></span></p>
+                     <p style="  font-size:13px;" class="wzleft">“图片仅供参考，请以实物为准”</p>
+                </div>
+                
+          </div>
+          <div id="p30_left " class="top" >
+                  <img src="p30_left_cn.png" alt="p30_left" class="p30-">
+                  <div id="sh" ></div>
+          </div>
+     </section>
+    <section id="p30_right">
+        <div id="rgzn1 " style="width:500px ;height: 200px; border: 1px solid black; background-image: url(Atlas.jpg);"class="p30big"> 
+                
+             </div>
+        <div id="rgzn2" class="backgroun-color  ">
+      
+                 <div style="width:300px ;height: 450px;  margin: auto; margin-top:200px; padding-top: 30px;" >
+                     <p>产品</p>
+                     <h1 style="padding-bottom: 120px;" >“Atlas人工智能计算平台”正式上线华为商城</h1>
+                     <p  class="goumai yidong ">点击购买&emsp; <span class="yidong1 goumai  glyphicon glyphicon-arrow-right"></span></p>
+                </div> 
+        </div>
+    </section>
+    <div class="maskbox">
+       <img src="1.PNG" alt="" class="jpg shadow">
+       <div class="mask"></div>
+    </div>
+    <footer>
+        <div class="titlebox"> 
+            <span class="title1">成功的故事</span>
+            <span class="title2 yidong right"> 查看全部&emsp; <span class=" glyphicon glyphicon-chevron-right"></span></span>
+        </div>
+            <section style="height: 450px;display: flex ;">
+                <div  class="gswzbox shadow left ccc" style="padding-top: 200px;">
+                    <div style=" background-image:url(macau-cem-story-cn-314.jpg);border-radius: 8px 8px 0 0;"class="gswz gstuleft"></div>
+                    <div class="backgroun-color gswz1">
+                        <div class="dkjz" >
+                            <p>成功故事</p>
+                            <br>
+                            <h2 style="padding-bottom: 50px;">澳门电力:带来璀璨生活动力</h2>
+                            <p class="font yidong right">更多&emsp; <span class="  font glyphicon glyphicon-arrow-right"></span></p>
+                        </div>
+                    </div>
+                </div>
+                <section style="height: 450px;display: flex ;">
+                    <div  class="gswzbox shadow left ccc" style="padding-top: 200px;">
+                        <div style=" background-image:url(rustenburg-smart-city.jpg);border-radius: 8px 8px 0 0;"class="gswz gstuleft"></div>
+                        <div class="backgroun-color gswz1">
+                            <div class="dkjz" >
+                                <p>成功故事</p>
+                                <br>
+                                <h2 style="padding-bottom: 50px;">铂金之都南非勒斯滕堡开采智慧城市金矿</h2>
+                                <p class="font yidong right">更多&emsp; <span class="  font glyphicon glyphicon-arrow-right"></span></p>
+                            </div>
+                        </div>
+                    </div>
+                <div class="gswzbox  shadow left"  style="padding-top: 200px;">
+                    <div style="background-image:url(3uk-314.jpg);border-radius: 8px 8px 0 0;" class="gswz gstuleft"></div>
+                    <div   class="backgroun-color gswz1">
+                        <div class="dkjz">
+                          <p>成功故事</p>
+                          <br>
+                          <h2 style="padding-bottom: 20px;">Three UK:5G提升网络容量，创造炫酷应用</h2>
+                          <p class="font yidong right" >更多&emsp; <span class="  glyphicon glyphicon-arrow-right"></span></p>         
+                      </div>
+                    </div>
+                </div>
+            </section>
+    <section  id="zuihou">
+          <div  class="titlebox" >
+                <span class="title1 yidong">近期新闻</span>
+                <span class="title2 yidong right"> 查看全部&emsp; <span class=" glyphicon glyphicon-chevron-right"></span></span>
+          </div>
+
+          <section style=" width:1300px;margin:0 auto;">
+                <div style="width:400px;height: 500px;display: inline-block;vertical-align:middle" class="gswzbox  shadow">
+                        <div style=" width:400px;height: 200px; background-image:url(190627.png);border-radius: 8px 8px 0 0;top:0px;"class="gswz xwt"></div>
+                        <div class="backgroun-color gswz1"style="width:400px;height:300px;">
+                            <div class="dkjz">
+                                <p>新闻 | 2019年06月27日</p>
+                                <br>
+                                <h2 style="padding-bottom: 110px;">华为发布创新和知识权白皮书</h2>
+                                <p class="font yidong right">更多&emsp; <span class="  font glyphicon glyphicon-arrow-right"></span></p>
+                            </div>
+                        </div>
+                    </div>
+           <aside id="aside1" >
+              <div class="xwbox">
+                  <p>新闻 | 2019年07月15日</p>
+                  <h4 ><a href="" class="xwnr"> 浙江移动完成全球首例基于鲲鹏处理器的运营商IT应用系</a></h5>
+              </div>
+              <div class="xwbox">
+                    <p>新闻 | 2019年07月15日</p>
+                    <h4 ><a href=""  class="xwnr"> 华为发布智简全光战略，携手上下游重新定义光产业</a></h4>
+              </div>
+              <div class="xwbox">
+                    <p>新闻 | 2019年07月15日</p>
+                    <h4  ><a href="" class="xwnr">  华为GaussDB数据库携领先架构助力客户业务持续创新</a></h4>
+              </div>
+              <div class="xwbox">
+                    <p>新闻 | 2019年07月15日</p>
+                    <h4 ><a href=""  class="xwnr"> 华为发布业界首款P比特级群路由器NetEngine  5000E-20</a></h4>
+              </div>
+           </aside>
+  
+          </section>
+          
+     </section>
+    </footer>
+</main>
+<div>
+    <aside id="aside" style=" height:720px;padding-top:25px;background-color: #f0f0f0;"  >
+        <section class="aside2" >
+            <div >
+                <ul >
+                  <li style="  margin-bottom:20px;" class="right"> <a href="" class="asidetou">关于华为</a><span class="glyphicon glyphicon-chevron-right"></span></li>
+                  <li> <a href="">公司简介</a> </li>
+                  <li> <a href="">公司治理</a></li>
+                  <li><a href="">管理层信息</a></li>
+                  <li><a href="">可持续发展</a></li>
+                  <li><a href="">网络安全</a></li>
+                  <li><a href="">债券投资关系</a></li>
+                  <li><a href="">出版物</a></li>
+                </ul>
+            </div>
+            <div >
+                <ul>
+                        <li style="  margin-bottom:20px;" class="right"><a href="" class="asidetou">新闻 & 展会</a><span class="glyphicon glyphicon-chevron-right"></span> </li>
+                        <li><a href="">新闻</a> </li>
+                        <li><a href="">展会活动</a> </li>
+                        <li><a href="">公司年报</a> </li>
+                        <li><a href="">媒体图库</a> </li>
+                        <li><a href="">媒体联系</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul>
+                <li style="  margin-bottom:20px;" class="right"><a href="" class="asidetou">行业洞察</a><span class="glyphicon glyphicon-chevron-right"></span> </li>
+                <li><a href="">行为研究</a> </li>
+                <li><a href="">行业展望</a> </li>
+                <li><a href="">热点技术</a> </li>
+                <li><a href="">创新</a> </li>
+               </ul>
+            </div>
+            <div >
+                <ul>
+                  <li style="  margin-bottom:20px;" class="right"><a href=""class="asidetou">技术支持</a> <span class="glyphicon glyphicon-chevron-right"></span></li>
+                  <li><a href="">消费者技术支持</a> </li>
+                  <li><a href="">企业技术支持</a> </li>
+                  <li><a href="">运营商技术支持</a> </li>
+                  <li><a href="">安全通告</a> </li>
+              </ul>
+            </div>
+        </section >
+        <section class="aside2" style="height: 150px;margin-top: 65px;">
+                <div >
+                        <ul>
+                            <li><a href="" class="asidetou" >业务入口</a> </li>
+                            <li><a href=""> 招聘</a></li>
+                            <li><a href=""> 供应商平台</a></li>
+                        </ul>
+                    </div>
+                    <div class="aside3">
+                        <ul >
+                            <li><a href=""> 开发者</a></li>
+                            <li><a href="">除名查询</a> </li>
+                        </ul>
+                    </div>
+                    <div class="aside3" >
+                        <ul >
+                            <li><a href=""> 合作伙伴</a></li>
+                        </ul>
+                    </div>
+                    <div  class="aside3">
+                         <ul >
+                                 <li><a href=""> 产品自定义社区</a></li>
+                         </ul>
+                    </div>
+        </section>
+           
+        <section class="aside2"style="height: 150px;margin-top: 0px;">
+                <div >
+                        <ul >
+                            <li><a href="" class="asidetou">相关网站</a> </li>
+                            <li><a href=""> 华为商城</a></li>
+                            <li><a href="">华为海洋</a> </li>
+                        </ul>
+                    </div>
+                    <div class=" aside3" >
+                        <ul  >
+                            <li><a href=""> 华为云</a></li>
+                            <li><a href=""> 荣耀官网</a></li>
+                        </ul>
+                    </div>
+                    <div  class="aside3">
+                        <ul>
+                            <li><a href=""> 华为智能光伏</a></li>
+                        </ul>
+                    </div>
+                    <div class="aside3">
+                        <ul>
+                            <li><a href=""> 华为心声社区</a></li>
+                        </ul>
+                    </div>
+        </section>
+    </aside>
+    <address style="background-color: black;">
+         <div >
+             <span style="color: white">2019 华为技术有限公司  粤A2-20044005 粤公网安备 44030702002388号</span>
+             <span  style="color: white">联系我们&ensp;|&ensp;法律声明&ensp;|&ensp;隐私政策</span>
+         </div>
+    </address>
+</div> 
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
